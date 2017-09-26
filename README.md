@@ -27,3 +27,6 @@ O front do projeto, construído todo em Angular4 conta com:
 - formulário para criação/atualização de produto
 - serviços para buscar dados da API
 - um middleware fazendo verificação dos JWT do login
+- código feito em TypeScript e features do EcmaScript6
+- material design
+- estilização (básica) com SCSS
