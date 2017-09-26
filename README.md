@@ -3,17 +3,17 @@
 ## Requisitos para rodar o projeto
 Node.js e NPM instalados na máquina
 Angular CLI instalado globalmente
-  npm i @angular/cli -g
+    _npm i @angular/cli -g_
   
 ## Rodando o projeto
 
 No terminal, na pasta do projeto, rode o comando
-  npm i
+    _npm i_
 para instalar todas as dependencias, após finalizado, entre com
-  ng serve
+    _ng serve_
 e o projeto já estará disponível na url *http://localhost:4200/*.
 Também o possível gerar o build da aplicação via 
-  ng build
+    _ng build_
 e acessar a url com o caminho direto.
 
 Cerifique-se que a api já esteja rodando também.
