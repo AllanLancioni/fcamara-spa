@@ -1,0 +1,52 @@
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2>Produtos</h2>
+      </div>
+    </div>
+  </div>
+
+  <a class="add-data waves-effect waves-light btn-floating btn-large indigo darken-3" routerLink="./new"><i class="material-icons">add</i> </a>
+
+  <div id="boxItems" class="box box-default">
+    <div class="box-body">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box-header with-border">
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body table-responsive no-padding">
+            <table id="system-base-table" class="table table-bordered striped hover">
+              <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Criação</th>
+                <th>Última Modificação</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let product of data" class="row product-row" (click)="details($event, product._id)">
+                <td>{{product?._id}}</td>
+                <td>{{product?.title}}</td>
+                <td>{{product?.description}}</td>
+                <td>{{product?.price | currency:'BRL':true}}</td>
+                <td>{{product?.dateCreated | date:'dd/MM/y - HH:mm'}}</td>
+                <td>{{product?.dateModified | date:'dd/MM/y - HH:mm'}}</td>
+                <td>
+                  <button type="button" class="delete-button btn-floating red darken-2 waves-effect waves-light" (click)="deleteItem(product._id)"><i class="material-icons" title="Deletar registro">delete_forever</i></button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  

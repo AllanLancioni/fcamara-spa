@@ -1,0 +1,41 @@
+<section class="auth">
+  <div class="row register">
+    <div class="col s6 push-s3">
+        <h2 class="center-align">Registro</h2>
+        <div class="row">
+            <form class="col s12">
+            <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" name="name" type="text" class="validate" [(ngModel)]="name">
+                        <label for="name">Nome completo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate" [(ngModel)]="email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="pwd" name="pwd" type="password" class="validate" [(ngModel)]="pwd">
+                        <label for="pwd">Senha</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="confirm-pwd" name="confirmPwd" type="password" class="validate" [(ngModel)]="confirmPwd">
+                        <label for="confirm-pwd">Confirmar senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class="right-align">
+                            <button class="btn btn-large waves-effect waves-light red" type="button" name="action" routerLink="../login">Voltar ao login</button>
+                            <button class="btn btn-large waves-effect waves-light" type="button" name="action" (click)="register()">Finalizar cadastro!</button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</section>

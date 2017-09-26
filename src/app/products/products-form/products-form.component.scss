@@ -1,0 +1,23 @@
+.form-container {
+
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  .btn-menu {
+    position: relative;
+    right: 23px;
+    bottom: 5px;
+    float: right;
+
+    .btn-floating {
+      margin: 0 5px;
+
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+}
