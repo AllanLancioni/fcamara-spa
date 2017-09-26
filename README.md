@@ -10,7 +10,7 @@ Angular CLI instalado globalmente
 No terminal, na pasta do projeto, rode o comando
     _npm i_
 para instalar todas as dependencias, após finalizado, entre com
-    _ng serve_
+    _ng server_
 e o projeto já estará disponível na url *http://localhost:4200/*.
 Também o possível gerar o build da aplicação via 
     _ng build_
